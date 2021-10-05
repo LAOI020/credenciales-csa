@@ -1,0 +1,77 @@
+
+.employeeData-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: var(--backgroundColor-employeeData);
+}
+
+.employeeInfoPhoto {
+    display: flex;
+    align-self: center;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+
+    img {
+        height: 100%;
+        width: 100%;
+        // object-fit: cover;
+    }
+}
+
+.employeeData-card {
+    display: flex;
+    flex-direction: column;
+    height: var(--height-employeeData);
+    width: 60%;
+    overflow-y: auto;
+    padding: 10px 35px 10px 35px;
+    border-radius: 10px;
+    background-color: rgb(60,108,120);
+
+    img {
+        align-self: center;
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+
+        h4 {
+            margin: 0px;
+        }
+
+        :nth-child(1){
+            color: white;
+        }
+        :nth-child(2){
+            color: darken($color: white, $amount: 10);
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+    }
+
+    button {
+        cursor: pointer;
+        font-size: 1rem;
+        align-self: center;
+        width: 70%;
+        margin-top: 50px;
+        padding: 5px 0px 5px 0px;
+        color: white;
+        border-radius: 8px;
+        background-color: red;
+        transition: .3s ease;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}

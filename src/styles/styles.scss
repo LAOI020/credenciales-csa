@@ -1,0 +1,70 @@
+
+:root {
+    --width-container-login: 55%;
+    --size-logo-login: 30%;
+    --fontSize-iniciarSesion: 2rem;
+    --width-input-login: 40%;
+
+    --gridColumnsScreenOffices: 0.6fr 0.4fr;
+    --widthDatePicker: auto;
+
+    --size-icons-menuFAT: 2.5rem;
+
+    --backgroundColor-employeeData: none;
+    --height-employeeData: 80vh;
+
+    --gridColumn-employeeInfo: 0.15fr 0.65fr 0.2fr;
+
+    --width-NewEmployee-container: 60%;
+    --height-NewEmployee-container: 97%;
+    --flexDirection-NewEmployee-container: row;
+    --width-container-input-NewEmployee: 69%;
+    --width-input-NewEmployee: 60%;
+
+    --width-detailsHours: 90%;
+    --gridColumns-detailsHours: 0.4fr 0.2fr 0.2fr 0.2fr;
+    --color-hover-ContainerHours: rgb(205, 103, 10);
+
+    --height-credential-card: calc(var(--vh) * 70);
+    --width-credential-card: 30%;
+
+    @media screen and (max-width: 1024px) {
+        --width-container-login: 90%;
+        --size-logo-login: 50%;
+        --fontSize-iniciarSesion: 1.6rem;
+        --width-input-login: 75%;
+        
+        --gridColumnsScreenOffices: 1fr;
+        --widthDatePicker: 90%;
+
+        --size-icons-menuFAT: 1.9rem;
+
+        --backgroundColor-employeeData: rgb(60,108,120);
+        --height-employeeData: auto;
+
+        --gridColumn-employeeInfo: 0.15fr 0.63fr 0.22fr;
+
+        --width-NewEmployee-container: 90%;
+        --height-NewEmployee-container: 70%;
+        --flexDirection-NewEmployee-container: column;
+        --width-container-input-NewEmployee: 90%;
+        --width-input-NewEmployee: 100%;
+
+        --width-detailsHours: 96%;
+        --gridColumns-detailsHours: 0.23fr 0.27fr 0.27fr 0.23fr;
+        --color-hover-ContainerHours: rgb(60,108,120);
+
+        --height-credential-card: calc(var(--vh) * 100);
+        --width-credential-card: auto;
+    }
+}
+
+
+@import './base';
+@import './components/LoginScreen';
+@import './components/homeScreenOffices';
+@import './components/addNewEmployee';
+@import './components/scanQR';
+@import './components/credential';
+@import './components/reverseCredential';
+@import './components/employeeInfo';

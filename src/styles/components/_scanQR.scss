@@ -1,0 +1,56 @@
+
+.scanQR-main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(var(--vh) * 100);
+    width: 100%;
+    background-color: rgb(60,108,120);
+}
+
+.icon-showScanner {
+    cursor: pointer;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 10px;
+    background-color: rgb(205, 103, 9);
+    transition: .3s ease;
+
+    &:hover {
+        color: white;
+        transform: scale(1.2);
+    }
+}
+
+.icon-cancelScanner {
+    cursor: pointer;
+    position: fixed;
+    top: 8px;
+    right: 8px;
+    background-color: rgb(205, 103, 9);
+    border-radius: 10px;
+    transition: .3s ease;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.icon-logout {
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    height: 1.9rem;
+    width: 1.9rem;
+    padding: 3px;
+    color: white;
+    background-color: red;
+    border-radius: 50%;
+    transition: .3s ease;
+
+    &:hover {
+        background-color: darken($color: red, $amount: 20);
+        transform: scale(1.2);
+    }
+}

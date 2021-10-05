@@ -1,0 +1,84 @@
+
+.addNewEmployee-container {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.form-NewEmployee {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: var(--height-NewEmployee-container);
+    width: var(--width-NewEmployee-container);
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgb(60,108,120);
+    overflow-y: auto;
+
+    button {
+        cursor: pointer;
+        width: 69%;
+        margin-top: 10px;
+        padding: 5px;
+        color: white;
+        background-color: rgb(205, 103, 9);
+        border-radius: 10px;
+        font-size: 1rem;
+        font-weight: 800;
+    }
+}
+
+.newEmployee-image {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    svg {
+        height: 6.5rem;
+        width: 3rem;
+    }
+}
+
+.dropdownBussines {
+    margin-top: 8px;
+    padding: 4px;
+    border-radius: 8px;
+    font-weight: 700;
+}
+
+.newEmployee-entryData {
+    display: flex;
+    flex-direction: var(--flexDirection-NewEmployee-container);
+    align-items: center;
+    justify-content: space-between;
+    width: var(--width-container-input-NewEmployee);
+    margin: 10px 0px 10px 0px;
+
+    h4 {
+        margin: 0px;
+        margin-right: 8px;
+    }
+
+    input {
+        width: var(--width-input-NewEmployee);
+        padding: 4px;
+        border-radius: 8px;
+        font-size: 1rem;
+
+        &:focus {
+            outline: none;
+        }
+    }
+}

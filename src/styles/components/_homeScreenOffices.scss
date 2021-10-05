@@ -1,0 +1,196 @@
+
+.screenOffices-main-container {
+    display: grid;
+    grid-template-columns: var(--gridColumnsScreenOffices);
+    height: calc(var(--vh) * 100);
+    width: 100%;
+    background-color: black;
+}
+
+.menuFAT {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    bottom: 8px;
+    right: 8px;
+
+    :nth-child(1){
+        height: var(--size-icons-menuFAT);
+        width: var(--size-icons-menuFAT);
+        border-radius: 8px;
+        padding: 3px;
+        margin-bottom: 1rem;
+        color: white;
+        background-color: rgb(205,103,9);
+    }
+    :nth-child(2){
+        height: var(--size-icons-menuFAT);
+        width: var(--size-icons-menuFAT);
+        border-radius: 8px;
+        padding: 3px;
+        margin-bottom: 1rem;
+        color: white;
+        background-color: red;
+    }
+    :nth-child(3){
+        height: var(--size-icons-menuFAT);
+        width: var(--size-icons-menuFAT);
+        border-radius: 8px;
+        padding: 3px;
+        color: white;
+        background-color: rgb(205,103,9);
+    }
+}
+.addUserIcon {
+    cursor: pointer;
+    position: fixed;
+    bottom: 8px;
+    right: 8px;
+    padding: 2px;
+    border-radius: 8px;
+    color: white;
+    background-color: rgb(205,103,9);
+    transition: .3s ease;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.allEmployees-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 5px 0px 5px; 
+    overflow-y: auto;       
+}
+
+.allEmployees-searchBar {
+    position: absolute;
+    top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.searchBar-divs {
+    display: flex;
+    align-items: center;
+    width: 100%;        
+    
+    input {
+        margin-left: 5px;
+        padding: 7px;
+        width: 88%;
+        border-radius: 8px;
+        font-size: 1rem;
+    
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.searchBar-datePicker-div {
+    display: flex;
+    align-items: center;
+    width: 100%;        
+    margin-top: 15px;
+
+    h2 {
+        color: rgb(205, 103, 10);
+        margin: 0px;
+        margin-left: 5px;
+    }
+        
+
+    input {
+        margin-left: 8px;
+        width: var(--widthDatePicker);
+        border: none;
+        border-radius: 8px;
+        color: white;
+        background-color: transparent;
+        font-size: 1rem;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+    
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+
+.employeeInfo-container {
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: var(--gridColumn-employeeInfo);
+    width: 100%;
+    color: white;
+    background-color: rgb(60,108,120);
+    transition: .3s ease;
+
+    &:hover {
+        background-color: var(--color-hover-ContainerHours);
+    }
+
+    h4 {
+        margin: 0px;
+        padding: 5px 0px 5px 0px;
+        text-align: center;
+        border: 2px solid white;
+    }
+
+    :nth-child(1){
+        border-right: 0px;
+    }
+
+    :nth-child(2){
+        border-right: 0px;
+    }
+}
+
+.icon-ShowUser {
+    align-self: center;
+    height: 40px;
+    width: 40px;
+    padding: 3px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    color: white;
+    background-color: rgb(205, 103, 10);
+}
+
+.detailsHours-container {
+    display: grid;
+    grid-template-columns: var(--gridColumns-detailsHours);
+    width: var(--width-detailsHours);
+    align-self: flex-end;
+    color: white;
+    background-color: rgb(60,108,120);
+
+    h4 {
+        margin: 0px;
+        padding: 3px 0px 3px 0px;
+        font-size: 0.9rem;
+        font-weight: 500;
+        text-align: center;
+        border: 2px solid white;
+    }
+
+    :nth-child(1){
+        border-right: 0px;
+    }
+
+    :nth-child(2){
+        border-right: 0px;
+    }
+
+    :nth-child(3){
+        border-right: 0px;
+    }
+}
